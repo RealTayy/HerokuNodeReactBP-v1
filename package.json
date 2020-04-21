@@ -9,7 +9,7 @@
   "scripts": {
     "start": "per-env",
     "start:development": "concurrently \"npm run client\" \"npm run server\"",
-    "start:production": "npm run server",    
+    "start:production": "npm run server",
 
     "client": "per-env",
     "client:development": "cd client && npm run start",

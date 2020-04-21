@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "per-env",
     "start:development": "nodemon server.js --exec babel-node",
-    "start:production": "babel-node server.js"
+    "start:production": "npx babel server.js && node build/server.js"
   },
   "keywords": [],
   "author": "",
