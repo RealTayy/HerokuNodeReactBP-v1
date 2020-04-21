@@ -10,17 +10,13 @@
     "start": "per-env",
     "start:development": "concurrently \"npm run client\" \"npm run server\"",
     "start:production": "npm run server",
-    
     "install": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
-    
     "client": "per-env",
     "client:development": "cd client && npm run start",
-    "client:production": "cd client && npm run start",        
-    
+    "client:production": "cd client && npm run start",
     "server": "per-env",
     "server:development": "cd server && npm run start",
     "server:production": "cd server && npm run start",
-    
     "heroku-postbuild": "npm run build",
     "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\""
   },
@@ -39,7 +35,6 @@
     "per-env": "^1.0.2"
   },
   "devDependencies": {
-    "concurrently": "^5.1.0",
-    "nodemon": "^2.0.3"
+    "concurrently": "^5.1.0"
   }
 }
