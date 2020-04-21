@@ -3,26 +3,26 @@
   "version": "1.0.0",
   "description": "Heroku App BP",
   "engines": {
-		"node": "12.16.2"
-	},
+    "node": "12.16.2"
+  },
   "main": "index.js",
   "scripts": {
     "start": "per-env",
     "start:development": "concurrently \"npm run client\" \"npm run server\"",
     "start:production": "npm run server",
 
+    "install": "cd client && npm install",
+    
     "client": "per-env",
     "client:development": "cd client && npm run start",
-    "client:production": "cd client && npm run start",
-
-    "install": "cd client && npm install",
+    "client:production": "cd client && npm run start",        
     
     "server": "per-env",
     "server:development": "cd server && npm run start",
-    "server:production": "cd server && npm run start",    
+    "server:production": "cd server && npm run start",
     
     "heroku-postbuild": "npm run build",
-    "build": "cd client && npm run build"
+    "build": "concurrently \"cd client && npm run build\" \"cd server && npm run build\""
   },
   "repository": {
     "type": "git",
