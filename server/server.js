@@ -23,7 +23,7 @@ app.get('/api/test', (req, res) => {
 
 app.get('*', (req, res) => {
   console.log("dirname: ", __dirname);
-  res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+  res.sendFile(path.join("index.html"));
 })
 
 
