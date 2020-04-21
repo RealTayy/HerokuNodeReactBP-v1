@@ -1,2 +1,7 @@
-package_modules
+## ROOT
+node_modules
 .env
+
+## SERVER
+
+## CLIENT
