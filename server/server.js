@@ -5,8 +5,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
-console.log("TEST:", process.env.TEST);
-console.log("NODE_ENV:", process.env.NODE_ENV);
 
 /*****************|
 |* SET UP ROUTES *| 
