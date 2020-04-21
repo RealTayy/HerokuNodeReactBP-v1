@@ -21,9 +21,8 @@ app.get('/api/test', (req, res) => {
   res.send(`${TEST} | ${NODE_ENV}`);
 })
 
-app.get('*', (req, res) => {
-  console.log("dirname: ", __dirname);
-  res.sendFile(path.join("index.html"));
+app.get('*', (req, res) => {  
+  res.sendFile("index.html");
 })
 
 
