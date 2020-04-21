@@ -12,6 +12,8 @@
     "client": "per-env",
     "client:development": "cd client && npm run start",
     "client:production": "cd client && npm run start",
+
+    "install": "cd client && npm install",
     
     "server": "per-env",
     "server:development": "cd server && npm run start",
