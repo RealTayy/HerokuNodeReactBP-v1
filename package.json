@@ -11,7 +11,7 @@
     "start:development": "concurrently \"npm run client\" \"npm run server\"",
     "start:production": "npm run server",
     
-    "install": "concurrently \"cd client && npm run install\" \"cd server && npm run install\"",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
     
     "client": "per-env",
     "client:development": "cd client && npm run start",
