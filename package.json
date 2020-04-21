@@ -7,8 +7,10 @@
 	},
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run client\" \"npm run server\"",
-    
+    "start": "per-env",
+    "start:development": "concurrently \"npm run client\" \"npm run server\"",
+    "start:production": "npm run client",    
+
     "client": "per-env",
     "client:development": "cd client && npm run start",
     "client:production": "cd client && npm run start",
