@@ -8,7 +8,7 @@
     "start": "per-env",
     "start:development": "nodemon server.js --exec babel-node",
     "start:production": "node build/server.js",
-    "build": "npx babel server.js -d build -s"
+    "build": "babel server.js -d build -s"
   },
   "keywords": [],
   "author": "",
