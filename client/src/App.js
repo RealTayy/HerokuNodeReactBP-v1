@@ -1,6 +1,7 @@
 import React from 'react';
 import { observable, action } from "mobx";
 import { observer } from "mobx-react";
+import placeholderImage from "./assets/images/placeholder.png";
 
 class MobXState {
   @observable timer = 0;
@@ -28,6 +29,7 @@ const App = () => {
     <div className="App">
       Hello World!
       <TimerView mobXState={new MobXState()} />
+      <img src={placeholderImage} alt="placeholder" />
     </div>
   );
 }
