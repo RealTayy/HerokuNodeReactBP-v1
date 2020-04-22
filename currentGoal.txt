@@ -1,0 +1,4 @@
+1. Incorporate MobX
+  1a. customize-cra?
+  - Manage currentPage with MobX
+    -- Using Observerables and decorators

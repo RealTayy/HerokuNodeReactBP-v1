@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/RealTayy/HerokuNodeReactBP-v1#readme",
   "dependencies": {
+    "mobx-react-devtools": "^6.1.1",
     "per-env": "^1.0.2"
   },
   "devDependencies": {
